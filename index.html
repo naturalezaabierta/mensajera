@@ -78,6 +78,102 @@ input[type=file]{width:100%;color:#e9e3f3;font:inherit;background:rgba(251,246,2
 .libro-card p{margin:0 0 12px;color:#e9e3f3;line-height:1.5}
 .libro-card button{width:100%;min-height:50px;border-radius:999px;border:1.5px solid rgba(247,222,156,.5);background:transparent;color:var(--oro-hi);font:600 1rem 'Montserrat',sans-serif;cursor:not-allowed}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* ===== Rediseño visual: experiencia de solicitud ===== */
+:root{--noche:#080d27;--azul:#14285f;--azul2:#203d83;--oro:#e8c477;--oro-hi:#f8e7bd;--oro-os:#89601e;--perla:#fffaf2;--perla2:#f3eaf1;--rosa:#e8bfd0;--tinta:#17234d;--suave:#62698d}
+body{
+  background:
+    radial-gradient(ellipse at 50% -12%,rgba(248,231,189,.23),transparent 36%),
+    radial-gradient(ellipse at 0% 45%,rgba(74,100,177,.22),transparent 36%),
+    radial-gradient(ellipse at 100% 75%,rgba(232,191,208,.12),transparent 34%),
+    linear-gradient(160deg,#080d27 0%,#0c1738 54%,#111d43 100%);
+  font-size:16px;line-height:1.7
+}
+main{width:min(100% - 32px,620px);padding:34px 0 68px}
+header{margin-bottom:30px}
+.logo-wrap{
+  width:clamp(176px,48vw,238px);margin-bottom:22px;
+  padding:5px;border:1px solid rgba(248,231,189,.55);
+  background:linear-gradient(145deg,rgba(248,231,189,.18),rgba(232,191,208,.08));
+  box-shadow:0 0 0 7px rgba(248,231,189,.035),0 18px 55px rgba(0,0,0,.3),0 0 70px rgba(248,231,189,.17)
+}
+.logo{border:1px solid rgba(255,255,255,.15)}
+h1{font-size:clamp(2.15rem,8vw,3.05rem);letter-spacing:.01em;text-shadow:0 5px 24px rgba(0,0,0,.2)}
+.lema{font-size:1.45rem;margin:7px 0 12px}
+header p.t{max-width:420px;font-size:1rem;color:#e6e3f0}
+.barra{height:7px;background:rgba(255,255,255,.11);box-shadow:inset 0 1px 3px rgba(0,0,0,.22);margin-bottom:10px}
+.barra i{background:linear-gradient(90deg,#d9a9c0,#e8c477,#fff0c8);box-shadow:0 0 14px rgba(232,196,119,.42)}
+.paso-txt{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#d7d8e8;margin-bottom:20px}
+.paso.on{
+  padding:clamp(21px,5vw,34px);border-radius:28px;
+  border:1px solid rgba(232,196,119,.27);
+  background:linear-gradient(145deg,rgba(23,40,91,.82),rgba(13,27,67,.88));
+  box-shadow:0 22px 60px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.055);
+  backdrop-filter:blur(12px)
+}
+h2{font-size:clamp(1.8rem,7vw,2.25rem);margin:0 0 22px}
+.opcion{
+  position:relative;overflow:hidden;background:linear-gradient(145deg,#fffdf8,#f1e9f2);
+  border:1px solid rgba(232,196,119,.8);border-radius:22px 22px 22px 9px;
+  padding:21px 22px;margin-bottom:14px;color:var(--tinta);
+  box-shadow:0 10px 24px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s,border-color .2s
+}
+.opcion:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,#e8bfd0,#e8c477)}
+.opcion:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 16px 32px rgba(0,0,0,.25),0 0 22px rgba(232,196,119,.15)}
+.opcion b{font-size:1.55rem}
+.opcion .pr strong{font-size:2.55rem;color:#8b6424}
+.opcion small{font-size:.9rem;line-height:1.55}
+label{font-size:.91rem;letter-spacing:.01em;color:#f3dfb0;margin:19px 0 7px}
+.ayuda{font-size:.88rem;color:#d7d9e8;line-height:1.55}
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number],textarea{
+  min-height:53px;background:#fffdf8;border:1px solid rgba(232,196,119,.72);border-radius:13px;
+  color:var(--tinta);font-size:.94rem;padding:13px 15px;box-shadow:inset 0 1px 2px rgba(22,33,77,.04);
+  transition:border-color .2s,box-shadow .2s
+}
+input:focus,textarea:focus{border-color:#f8e7bd;box-shadow:0 0 0 4px rgba(232,191,208,.18)}
+textarea{min-height:118px}
+input[type=file]{border-radius:14px;background:rgba(255,255,255,.06);border:1px dashed rgba(248,231,189,.58)}
+.check{font-size:.91rem}
+.check input,.metodo input{accent-color:#e8c477}
+.otra{border-left:3px solid var(--rosa);background:rgba(232,191,208,.06);border-radius:0 14px 14px 0;padding:5px 15px 14px}
+.btn{
+  min-height:58px;border-radius:15px;padding:15px 20px;font-size:1rem;
+  background:linear-gradient(135deg,#f8e7bd 0%,#e8c477 58%,#c9962f 100%);
+  box-shadow:0 10px 26px rgba(232,196,119,.2);transition:transform .2s,filter .2s,box-shadow .2s
+}
+.btn:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 14px 30px rgba(232,196,119,.27)}
+.btn.sec{border-radius:15px;border:1px solid rgba(248,231,189,.45);background:rgba(255,255,255,.045);color:#f8e7bd}
+.legal{font-size:.78rem;line-height:1.55;color:#c8cce0}
+.aviso{background:rgba(232,191,208,.12);border:1px solid rgba(232,191,208,.48);border-radius:14px}
+.total{background:linear-gradient(145deg,#fffdf8,#f1e9f2);border:1px solid #e8c477;border-radius:18px;padding:18px 20px;box-shadow:0 10px 22px rgba(0,0,0,.12)}
+.total span{font-weight:600}
+.total b{font-size:2.25rem}
+.metodo{background:rgba(255,255,255,.045);border:1px solid rgba(248,231,189,.25);border-radius:14px;padding:15px 16px;transition:background .2s,border-color .2s}
+.metodo:hover{border-color:rgba(248,231,189,.65)}
+.metodo.sel{background:rgba(232,196,119,.12);border-color:var(--oro)}
+.datos{background:rgba(255,255,255,.045);border:1px dashed rgba(232,191,208,.48);border-radius:14px;padding:14px}
+.dato{border-bottom:1px solid rgba(255,255,255,.08);font-size:.9rem}
+.dato:last-child{border-bottom:0}
+.dato button{border-radius:10px}
+.libro-card{border-radius:22px 22px 9px 22px;padding:24px 20px;background:linear-gradient(145deg,#26366f,#111f50);box-shadow:0 14px 30px rgba(0,0,0,.2)}
+.libro-card h3{font-size:1.8rem}
+.libro-card p{font-size:.9rem}
+.hecho{padding:26px 0 8px}
+.hecho h2{margin-top:12px}
+.err{font-size:.9rem}
+button,a,input{ -webkit-tap-highlight-color:transparent}
+@media(max-width:520px){
+  main{width:min(100% - 24px,620px);padding-top:23px}
+  .paso.on{padding:21px 17px;border-radius:22px}
+  .opcion{padding:18px 17px}
+  .opcion .top{gap:9px}
+  .opcion b{font-size:1.35rem}
+  .opcion .pr strong{font-size:2.15rem}
+  .total{align-items:flex-start;flex-direction:column;gap:4px}
+  .dato{align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
 </style>
 </head>
 <body>
