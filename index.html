@@ -301,7 +301,7 @@ function elegir(o){
   if(o.tipo==='whatsapp'){
     $('resumenW').textContent=o.nombre;$('montoW').textContent='$'+Number(o.precio_usd);$('descW').textContent=o.descripcion||'';
     const msg='Hola, quiero agendar la consulta personal ($'+Number(o.precio_usd)+').';
-    $('waBtn').href='https://wa.me/'+(o.contacto||'584160650749')+'?text='+encodeURIComponent(msg);
+    $('waBtn').href='https://wa.me/'+(o.contacto||'584163281296')+'?text='+encodeURIComponent(msg);
     ir('W');return;
   }
   $('aviso1').classList.remove('on');
