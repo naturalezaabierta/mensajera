@@ -7,10 +7,11 @@
 <meta name="description" content="Mensajes de los arcángeles para tu situación. Tu lectura personal llega a tu correo en PDF.">
 <meta property="og:title" content="Mensajera de los Arcángeles">
 <meta property="og:description" content="Cuéntanos qué necesitas saber. Tu mensaje angelical llega a tu correo en PDF.">
-<meta property="og:image" content="logo-arcangeles.png">
+<meta property="og:image" content="https://mensajera.naturalezaabierta.com/logo-arcangeles.jpg">
+<meta property="og:url" content="https://mensajera.naturalezaabierta.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--noche:#070f2e;--azul:#10286b;--azul2:#1a3a8f;--oro:#e6b94d;--oro-hi:#f7de9c;--oro-os:#8a6420;--perla:#fbf6ee;--perla2:#f1e8f3;--rosa:#e7b6c9;--tinta:#16214d;--suave:#4d5580;--err:#b3261e;color-scheme:dark}
 *{box-sizing:border-box}
@@ -21,11 +22,11 @@ main{width:min(100% - 28px,540px);margin:0 auto;padding:26px 0 54px}
 header{text-align:center;margin-bottom:26px}
 .logo-wrap{width:clamp(190px,62vw,270px);aspect-ratio:1;margin:0 auto 14px;border-radius:50%;box-shadow:0 0 0 1px rgba(247,222,156,.4),0 0 46px rgba(247,222,156,.28),0 0 90px rgba(231,182,201,.16)}
 .logo{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
-h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;line-height:1.12}
+h1,h2,h3{font-family:'Montserrat',system-ui,sans-serif;font-weight:700;line-height:1.12}
 h1{font-size:clamp(1.9rem,8vw,2.6rem);margin:0 0 6px;color:var(--oro-hi)}
 h2{font-size:clamp(1.7rem,7vw,2.1rem);color:var(--oro-hi);margin:0 0 16px}
 h2:focus{outline:none}
-.lema{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:600;font-size:1.3rem;color:var(--rosa);margin:0 0 10px}
+.lema{font-weight:500;font-size:1.3rem;color:var(--rosa);margin:0 0 10px}
 header p.t{max-width:380px;margin:0 auto;color:#e9e3f3;font-size:1.08rem}
 p{margin:0 0 14px}
 .barra{height:6px;background:rgba(247,222,156,.14);border-radius:99px;margin:0 0 8px;overflow:hidden}
@@ -36,9 +37,9 @@ p{margin:0 0 14px}
 .opcion:hover:not(:disabled){box-shadow:0 12px 30px rgba(0,0,0,.34),0 0 24px rgba(247,222,156,.3)}
 .opcion:disabled{opacity:.55;cursor:not-allowed}
 .opcion .top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
-.opcion b{flex:1;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.45rem;line-height:1.15;color:var(--azul)}
+.opcion b{flex:1;font-family:'Montserrat',system-ui,sans-serif;font-size:1.45rem;line-height:1.15;color:var(--azul)}
 .opcion .pr{flex:none;text-align:right}
-.opcion .pr strong{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;line-height:1;color:var(--oro-os)}
+.opcion .pr strong{display:block;font-family:'Montserrat',system-ui,sans-serif;font-size:2.4rem;line-height:1;color:var(--oro-os)}
 .opcion em{display:block;font-style:normal;font-size:.85rem;color:var(--suave);margin-top:4px;white-space:nowrap}
 .opcion small{display:block;color:var(--suave);font-size:.98rem;margin-top:10px;line-height:1.5}
 label{display:block;font-weight:600;font-size:1.08rem;color:var(--oro-hi);margin:19px 0 8px}
@@ -60,7 +61,7 @@ input[type=file]{width:100%;color:#e9e3f3;font:inherit;background:rgba(251,246,2
 .aviso{background:rgba(231,182,201,.16);border:1.5px solid var(--rosa);border-radius:16px;padding:13px 15px;margin-bottom:16px;display:none;color:var(--perla)}
 .aviso.on{display:block}
 .total{display:flex;justify-content:space-between;align-items:center;gap:12px;background:linear-gradient(160deg,var(--perla),var(--perla2));color:var(--tinta);border:1.5px solid var(--oro);border-radius:22px;padding:16px 18px;margin-bottom:12px}
-.total b{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--oro-os);white-space:nowrap}
+.total b{font-family:'Montserrat',system-ui,sans-serif;font-size:2rem;color:var(--oro-os);white-space:nowrap}
 .metodo{display:flex;gap:12px;align-items:center;background:rgba(251,246,238,.08);border:1.5px solid rgba(247,222,156,.35);border-radius:18px;padding:15px;margin-top:10px;cursor:pointer;min-height:56px}
 .metodo input{width:21px;height:21px;accent-color:var(--oro);flex:0 0 21px}
 .metodo.sel{border-color:var(--oro);background:rgba(247,222,156,.14)}
@@ -81,105 +82,66 @@ input[type=file]{width:100%;color:#e9e3f3;font:inherit;background:rgba(251,246,2
 
 /* ===== Rediseño visual: experiencia de solicitud ===== */
 :root{--noche:#080d27;--azul:#14285f;--azul2:#203d83;--oro:#e8c477;--oro-hi:#f8e7bd;--oro-os:#89601e;--perla:#fffaf2;--perla2:#f3eaf1;--rosa:#e8bfd0;--tinta:#17234d;--suave:#62698d}
-body{
-  background:
-    radial-gradient(ellipse at 50% -12%,rgba(248,231,189,.23),transparent 36%),
-    radial-gradient(ellipse at 0% 45%,rgba(74,100,177,.22),transparent 36%),
-    radial-gradient(ellipse at 100% 75%,rgba(232,191,208,.12),transparent 34%),
-    linear-gradient(160deg,#080d27 0%,#0c1738 54%,#111d43 100%);
-  font-size:16px;line-height:1.7
-}
+body{background:radial-gradient(ellipse at 50% -12%,rgba(248,231,189,.23),transparent 36%),radial-gradient(ellipse at 0% 45%,rgba(74,100,177,.22),transparent 36%),radial-gradient(ellipse at 100% 75%,rgba(232,191,208,.12),transparent 34%),linear-gradient(160deg,#080d27 0%,#0c1738 54%,#111d43 100%);font-size:16px;line-height:1.7}
 main{width:min(100% - 32px,620px);padding:34px 0 68px}
 header{margin-bottom:30px}
-.logo-wrap{
-  width:clamp(176px,48vw,238px);margin-bottom:22px;
-  padding:5px;border:1px solid rgba(248,231,189,.55);
-  background:linear-gradient(145deg,rgba(248,231,189,.18),rgba(232,191,208,.08));
-  box-shadow:0 0 0 7px rgba(248,231,189,.035),0 18px 55px rgba(0,0,0,.3),0 0 70px rgba(248,231,189,.17)
-}
+.logo-wrap{width:clamp(176px,48vw,238px);margin-bottom:22px;padding:5px;border:1px solid rgba(248,231,189,.55);background:linear-gradient(145deg,rgba(248,231,189,.18),rgba(232,191,208,.08));box-shadow:0 0 0 7px rgba(248,231,189,.035),0 18px 55px rgba(0,0,0,.3),0 0 70px rgba(248,231,189,.17)}
 .logo{border:1px solid rgba(255,255,255,.15)}
-h1{font-size:clamp(2.15rem,8vw,3.05rem);letter-spacing:.01em;text-shadow:0 5px 24px rgba(0,0,0,.2)}
-.lema{font-size:1.45rem;margin:7px 0 12px}
+h1{font-size:clamp(1.6rem,6.6vw,2.25rem);letter-spacing:0;text-shadow:0 5px 24px rgba(0,0,0,.2)}
+.lema{font-size:1.08rem;margin:8px 0 12px}
 header p.t{max-width:420px;font-size:1rem;color:#e6e3f0}
 .barra{height:7px;background:rgba(255,255,255,.11);box-shadow:inset 0 1px 3px rgba(0,0,0,.22);margin-bottom:10px}
 .barra i{background:linear-gradient(90deg,#d9a9c0,#e8c477,#fff0c8);box-shadow:0 0 14px rgba(232,196,119,.42)}
 .paso-txt{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#d7d8e8;margin-bottom:20px}
-.paso.on{
-  padding:clamp(21px,5vw,34px);border-radius:28px;
-  border:1px solid rgba(232,196,119,.27);
-  background:linear-gradient(145deg,rgba(23,40,91,.82),rgba(13,27,67,.88));
-  box-shadow:0 22px 60px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.055);
-  backdrop-filter:blur(12px)
-}
-h2{font-size:clamp(1.8rem,7vw,2.25rem);margin:0 0 22px}
-.opcion{
-  position:relative;overflow:hidden;background:linear-gradient(145deg,#fffdf8,#f1e9f2);
-  border:1px solid rgba(232,196,119,.8);border-radius:22px 22px 22px 9px;
-  padding:21px 22px;margin-bottom:14px;color:var(--tinta);
-  box-shadow:0 10px 24px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s,border-color .2s
-}
+.paso.on{padding:clamp(21px,5vw,34px);border-radius:28px;border:1px solid rgba(232,196,119,.27);background:linear-gradient(145deg,rgba(23,40,91,.82),rgba(13,27,67,.88));box-shadow:0 22px 60px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.055);backdrop-filter:blur(12px)}
+h2{font-size:clamp(1.45rem,5.6vw,1.85rem);margin:0 0 22px}
+.opcion{position:relative;overflow:hidden;background:linear-gradient(145deg,#fffdf8,#f1e9f2);border:1px solid rgba(232,196,119,.8);border-radius:22px 22px 22px 9px;padding:21px 22px;margin-bottom:14px;color:var(--tinta);box-shadow:0 10px 24px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s,border-color .2s}
 .opcion:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,#e8bfd0,#e8c477)}
 .opcion:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 16px 32px rgba(0,0,0,.25),0 0 22px rgba(232,196,119,.15)}
-.opcion b{font-size:1.55rem}
-.opcion .pr strong{font-size:2.55rem;color:#8b6424}
+.opcion b{font-size:1.15rem;line-height:1.3}
+.opcion .pr strong{font-size:2.1rem;color:#8b6424}
 .opcion small{font-size:.9rem;line-height:1.55}
-label{font-size:.91rem;letter-spacing:.01em;color:#f3dfb0;margin:19px 0 7px}
-.ayuda{font-size:.88rem;color:#d7d9e8;line-height:1.55}
-input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number],textarea{
-  min-height:53px;background:#fffdf8;border:1px solid rgba(232,196,119,.72);border-radius:13px;
-  color:var(--tinta);font-size:.94rem;padding:13px 15px;box-shadow:inset 0 1px 2px rgba(22,33,77,.04);
-  transition:border-color .2s,box-shadow .2s
-}
+label{font-size:.93rem;letter-spacing:.01em;color:#f3dfb0;margin:19px 0 7px}
+.ayuda{font-size:.9rem;color:#d7d9e8;line-height:1.55}
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number],textarea{min-height:53px;background:#fffdf8;border:1px solid rgba(232,196,119,.72);border-radius:13px;color:var(--tinta);font-size:.96rem;padding:13px 15px;box-shadow:inset 0 1px 2px rgba(22,33,77,.04);transition:border-color .2s,box-shadow .2s}
 input:focus,textarea:focus{border-color:#f8e7bd;box-shadow:0 0 0 4px rgba(232,191,208,.18)}
 textarea{min-height:118px}
 input[type=file]{border-radius:14px;background:rgba(255,255,255,.06);border:1px dashed rgba(248,231,189,.58)}
-.check{font-size:.91rem}
+.check{font-size:.93rem}
 .check input,.metodo input{accent-color:#e8c477}
 .otra{border-left:3px solid var(--rosa);background:rgba(232,191,208,.06);border-radius:0 14px 14px 0;padding:5px 15px 14px}
-.btn{
-  min-height:58px;border-radius:15px;padding:15px 20px;font-size:1rem;
-  background:linear-gradient(135deg,#f8e7bd 0%,#e8c477 58%,#c9962f 100%);
-  box-shadow:0 10px 26px rgba(232,196,119,.2);transition:transform .2s,filter .2s,box-shadow .2s
-}
+.btn{min-height:58px;border-radius:15px;padding:15px 20px;font-size:1rem;background:linear-gradient(135deg,#f8e7bd 0%,#e8c477 58%,#c9962f 100%);box-shadow:0 10px 26px rgba(232,196,119,.2);transition:transform .2s,filter .2s,box-shadow .2s}
 .btn:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 14px 30px rgba(232,196,119,.27)}
 .btn.sec{border-radius:15px;border:1px solid rgba(248,231,189,.45);background:rgba(255,255,255,.045);color:#f8e7bd}
-.legal{font-size:.78rem;line-height:1.55;color:#c8cce0}
+.legal{font-size:.8rem;line-height:1.55;color:#c8cce0}
 .aviso{background:rgba(232,191,208,.12);border:1px solid rgba(232,191,208,.48);border-radius:14px}
 .total{background:linear-gradient(145deg,#fffdf8,#f1e9f2);border:1px solid #e8c477;border-radius:18px;padding:18px 20px;box-shadow:0 10px 22px rgba(0,0,0,.12)}
 .total span{font-weight:600}
-.total b{font-size:2.25rem}
+.total b{font-size:1.8rem}
 .metodo{background:rgba(255,255,255,.045);border:1px solid rgba(248,231,189,.25);border-radius:14px;padding:15px 16px;transition:background .2s,border-color .2s}
 .metodo:hover{border-color:rgba(248,231,189,.65)}
 .metodo.sel{background:rgba(232,196,119,.12);border-color:var(--oro)}
 .datos{background:rgba(255,255,255,.045);border:1px dashed rgba(232,191,208,.48);border-radius:14px;padding:14px}
-.dato{border-bottom:1px solid rgba(255,255,255,.08);font-size:.9rem}
+.dato{border-bottom:1px solid rgba(255,255,255,.08);font-size:.92rem}
 .dato:last-child{border-bottom:0}
 .dato button{border-radius:10px}
 .libro-card{border-radius:22px 22px 9px 22px;padding:24px 20px;background:linear-gradient(145deg,#26366f,#111f50);box-shadow:0 14px 30px rgba(0,0,0,.2)}
-.libro-card h3{font-size:1.8rem}
-.libro-card p{font-size:.9rem}
+.libro-card h3{font-size:1.25rem;line-height:1.3}
+.libro-card p{font-size:.92rem}
+.libro-card .pl{font-weight:700;font-size:1.5rem;color:var(--oro-hi);margin:0 0 12px}
+.libro-card button.on{cursor:pointer;background:linear-gradient(135deg,#f8e7bd 0%,#e8c477 58%,#c9962f 100%);color:#241a05;border:0;border-radius:15px}
 .hecho{padding:26px 0 8px}
 .hecho h2{margin-top:12px}
-.err{font-size:.9rem}
-button,a,input{ -webkit-tap-highlight-color:transparent}
-@media(max-width:520px){
-  main{width:min(100% - 24px,620px);padding-top:23px}
-  .paso.on{padding:21px 17px;border-radius:22px}
-  .opcion{padding:18px 17px}
-  .opcion .top{gap:9px}
-  .opcion b{font-size:1.35rem}
-  .opcion .pr strong{font-size:2.15rem}
-  .total{align-items:flex-start;flex-direction:column;gap:4px}
-  .dato{align-items:flex-start}
-}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition-duration:.01ms!important}}
-
+.err{font-size:.92rem}
+.enlace-libro{word-break:break-all;font-size:.85rem;background:rgba(255,255,255,.06);border-radius:12px;padding:10px 12px}
+button,a,input{-webkit-tap-highlight-color:transparent}
+@media(max-width:520px){main{width:min(100% - 24px,620px);padding-top:23px}.paso.on{padding:21px 17px;border-radius:22px}.opcion{padding:18px 17px}.opcion .top{gap:9px}.total{align-items:flex-start;flex-direction:column;gap:4px}.dato{align-items:flex-start}}
 </style>
 </head>
 <body>
 <main>
 <header>
-  <div class="logo-wrap"><img class="logo" src="logo-arcangeles.png" width="600" height="600" alt="Mensajera de los Arcángeles"></div>
+  <div class="logo-wrap"><img class="logo" src="logo-arcangeles.jpg" width="600" height="600" alt="Mensajera de los Arcángeles"></div>
   <h1>Mensajera de los Arcángeles</h1>
   <p class="lema">Un mensaje de luz para tu camino</p>
   <p class="t">Cuéntanos qué necesitas saber. Tu mensaje angelical llega a tu correo en PDF.</p>
@@ -192,11 +154,12 @@ button,a,input{ -webkit-tap-highlight-color:transparent}
   <h2 id="t1" tabindex="-1">Elige tu consulta</h2>
   <div class="aviso" id="aviso1"></div>
   <div id="opciones"><p class="ayuda">Cargando opciones…</p></div>
-  <div class="libro-card">
+  <div class="libro-card" id="libroCard">
     <span class="sello">Libro en PDF</span>
-    <h3>Libro de mensajería de los arcángeles</h3>
-    <p>Un libro descargable con mensajes de los arcángeles para leer a tu ritmo.</p>
-    <button type="button" disabled>Muy pronto</button>
+    <h3 id="libroTit">Libro de los Arcángeles</h3>
+    <p id="libroDesc">Un libro digital para leer a tu ritmo.</p>
+    <p class="pl" id="libroPrecio" hidden></p>
+    <button type="button" id="libroBtn" disabled>Muy pronto</button>
   </div>
 </section>
 
@@ -205,10 +168,11 @@ button,a,input{ -webkit-tap-highlight-color:transparent}
   <div class="hp"><label>Web <input type="text" id="web" tabindex="-1" autocomplete="off"></label></div>
   <label for="nombre">Tu nombre completo</label>
   <input type="text" id="nombre" autocomplete="name">
-  <label for="email">Correo donde recibirás tu PDF</label>
+  <label for="email" id="lblEmail">Correo donde recibirás tu PDF</label>
   <input type="email" id="email" autocomplete="email" inputmode="email">
   <label for="whatsapp">WhatsApp (opcional)</label>
   <input type="tel" id="whatsapp" autocomplete="tel" inputmode="tel">
+  <div id="bloqueInforme">
   <label for="nac">Tu fecha de nacimiento</label>
   <input type="date" id="nac">
   <label class="check"><input type="checkbox" id="otraChk"> Quiero consultar también sobre otra persona</label>
@@ -220,6 +184,7 @@ button,a,input{ -webkit-tap-highlight-color:transparent}
     <label for="oNac">Su fecha de nacimiento (opcional)</label>
     <p class="ayuda">Si no la tienes, déjala en blanco y haremos la lectura con lo que sí sabemos.</p>
     <input type="date" id="oNac">
+  </div>
   </div>
   <div id="preguntas"></div>
   <div class="err" id="err2" role="alert"></div>
@@ -261,10 +226,14 @@ button,a,input{ -webkit-tap-highlight-color:transparent}
 </section>
 
 <section class="paso hecho" id="p4" aria-labelledby="t4">
-  <div class="logo-wrap"><img class="logo" src="logo-arcangeles.png" width="600" height="600" alt="Mensajera de los Arcángeles"></div>
+  <div class="logo-wrap"><img class="logo" src="logo-arcangeles.jpg" width="600" height="600" alt="Mensajera de los Arcángeles"></div>
   <h2 id="t4" tabindex="-1">Tu solicitud fue recibida</h2>
   <p id="msgFinal"></p>
-  <p class="ayuda">Revisamos tu pago personalmente. Desde que lo confirmamos, tu informe tarda entre 30 y 45 minutos en llegar. Revisa también tu carpeta de spam.</p>
+  <p class="ayuda" id="ayudaInforme">Revisamos tu pago personalmente. Desde que lo confirmamos, tu informe tarda entre 30 y 45 minutos en llegar. Revisa también tu carpeta de spam.</p>
+  <div id="bloqueLibro" hidden>
+    <p class="ayuda">Revisamos tu pago personalmente. Apenas lo confirmemos podrás descargar tu libro desde esta página (y te llegará el enlace por correo). Guárdala:</p>
+    <a class="btn" id="linkLibro" href="#">Abrir mi página de descarga</a>
+  </div>
   <p class="legal">Guía de orientación espiritual; no sustituye la atención de profesionales de la salud.</p>
   <button class="btn sec" id="otra2">Hacer otra consulta</button>
 </section>
@@ -302,20 +271,33 @@ async function cargar(){
     await cargarTasa();
     const r=await fetch(SB+'/rest/v1/arc_config_consultas?select=*&order=orden',{headers:H});
     if(!r.ok)throw 0;
-    S.cfg=await r.json();pintarOpciones();
+    S.cfg=await r.json();pintarOpciones();pintarLibro();
   }catch(e){$('opciones').innerHTML='<p class="err">No pudimos cargar las opciones. Recarga la página en un momento.</p>'}
 }
 function pintarOpciones(){
   const box=$('opciones');box.innerHTML='';
-  S.cfg.forEach(o=>{
+  S.cfg.filter(o=>o.tipo!=='libro').forEach(o=>{
     const b=document.createElement('button');b.type='button';b.className='opcion';b.disabled=!o.activo;
     const bs=bsDe(o.precio_usd);
     b.innerHTML='<span class="top"><b>'+esc(o.nombre)+'</b><span class="pr"><strong>$'+esc(Number(o.precio_usd))+'</strong>'+(bs?'<em>≈ Bs. '+esc(fmtBs(bs))+'</em>':'')+'</span></span><small>'+(o.activo?esc(o.descripcion):'No disponible por ahora')+'</small>';
     b.onclick=()=>elegir(o);box.appendChild(b);
   });
 }
+function pintarLibro(){
+  const o=S.cfg.find(x=>x.tipo==='libro');
+  $('libroCard').hidden=!o;
+  if(!o)return;
+  $('libroTit').textContent=o.nombre;$('libroDesc').textContent=o.descripcion||'';
+  const b=$('libroBtn'),ok=o.activo&&Number(o.precio_usd)>0;
+  if(ok){const bs=bsDe(o.precio_usd);$('libroPrecio').textContent='$'+Number(o.precio_usd)+(bs?' · ≈ Bs. '+fmtBs(bs):'');$('libroPrecio').hidden=false;b.textContent='Comprar el libro';b.disabled=false;b.className='on';b.onclick=()=>elegir(o)}
+  else{$('libroPrecio').hidden=true;b.textContent='Muy pronto';b.disabled=true;b.className='';b.onclick=null}
+}
 function elegir(o){
   S.opt=o;
+  const lib=o.tipo==='libro';
+  $('bloqueInforme').hidden=lib;
+  $('t2').textContent=lib?'Tus datos':'Tus datos y tus preguntas';
+  $('lblEmail').textContent=lib?'Correo donde recibirás tu libro':'Correo donde recibirás tu PDF';
   if(o.tipo==='whatsapp'){
     $('resumenW').textContent=o.nombre;$('montoW').textContent='$'+Number(o.precio_usd);$('descW').textContent=o.descripcion||'';
     const msg='Hola, quiero agendar la consulta personal ($'+Number(o.precio_usd)+').';
@@ -338,9 +320,11 @@ $('sig2').onclick=()=>{
   const e=$('err2');e.textContent='';const v=id=>$(id).value.trim();
   if(v('nombre').length<2)return fallo(e,'Escribe tu nombre completo.');
   if(!/^\S+@\S+\.\S+$/.test(v('email')))return fallo(e,'Revisa tu correo: ahí enviaremos tu PDF.');
-  if(!$('nac').value)return fallo(e,'Escribe tu fecha de nacimiento.');
-  if($('otraChk').checked&&(v('oNombre').length<2||v('oPar').length<2))return fallo(e,'Escribe el nombre de la otra persona y qué parentesco tiene contigo.');
-  if(v('q1').length<5)return fallo(e,'Escribe al menos tu primera pregunta.');
+  if(S.opt.tipo!=='libro'){
+    if(!$('nac').value)return fallo(e,'Escribe tu fecha de nacimiento.');
+    if($('otraChk').checked&&(v('oNombre').length<2||v('oPar').length<2))return fallo(e,'Escribe el nombre de la otra persona y qué parentesco tiene contigo.');
+    if(v('q1').length<5)return fallo(e,'Escribe al menos tu primera pregunta.');
+  }
   pintarPago();ir(3);
 };
 function pintarPago(){
@@ -389,12 +373,14 @@ $('enviar').onclick=async()=>{
     const v=x=>$(x).value.trim();
     const preguntas=[];
     for(let i=1;i<=S.opt.max_preguntas;i++){const q=v('q'+i);if(q)preguntas.push(q)}
-    const otra=$('otraChk').checked;
-    const row={id_solicitud:id,servicio:S.opt.id,nombre:v('nombre'),email:v('email'),whatsapp:v('whatsapp')||null,fecha_nacimiento:$('nac').value,
+    const lib=S.opt.tipo==='libro';
+    const otra=!lib&&$('otraChk').checked;
+    const row={id_solicitud:id,servicio:S.opt.id,nombre:v('nombre'),email:v('email'),whatsapp:v('whatsapp')||null,fecha_nacimiento:lib?null:$('nac').value,
       otra_persona_nombre:otra?v('oNombre'):null,otra_persona_parentesco:otra?v('oPar'):null,
       otra_persona_fecha_nacimiento:otra&&$('oNac').value?$('oNac').value:null,
       preguntas,metodo_pago:S.metodo.id,referencia_pago:v('ref')||null,monto_bs:S.metodo.bs?parseFloat($('bs').value):null,captura_url:path};
     const r=await fetch(SB+'/rest/v1/arc_solicitudes',{method:'POST',headers:{...H,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify(row)});
+    S.ultimoId=id;
     if(!r.ok){
       const t=await r.text();
       if(t.indexOf('Opcion no disponible')>-1){
@@ -410,7 +396,12 @@ $('enviar').onclick=async()=>{
 };
 function final(){
   const n=$('nombre').value.trim().split(/\s+/)[0];
-  $('msgFinal').textContent=n+', recibimos tu pago y tus preguntas. Tu informe en PDF llegará a '+$('email').value.trim()+'.';
+  const lib=S.opt&&S.opt.tipo==='libro';
+  $('ayudaInforme').hidden=lib;$('bloqueLibro').hidden=!lib;
+  if(lib){
+    $('msgFinal').textContent=n+', recibimos tu pago. Tu libro estará disponible apenas lo verifiquemos.';
+    $('linkLibro').href='descarga.html?id='+(S.ultimoId||'');
+  }else $('msgFinal').textContent=n+', recibimos tu pago y tus preguntas. Tu informe en PDF llegará a '+$('email').value.trim()+'.';
   ir(4);
 }
 $('otra2').onclick=()=>location.reload();

@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Panel · Mensajera de los Arcángeles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--suelo:#070f2e;--panel:#10286b;--panel2:#182f78;--borde:#4a5fa8;--perla:#fbf6ee;--tenue:#cfd3ee;--oro:#e6b94d;--rosa:#e7b6c9;--ok:#8fe0a0;--mal:#ff9c9c}
 *{box-sizing:border-box}
@@ -41,40 +44,18 @@ pre{white-space:pre-wrap;background:var(--panel2);border-radius:12px;padding:10p
 [hidden]{display:none!important}
 
 /* ===== Rediseño visual: panel administrativo ===== */
-:root{
-  --suelo:#070d25;--panel:#111f4a;--panel2:#192d61;--borde:rgba(219,190,116,.28);
-  --perla:#fffaf1;--tenue:#c7cce0;--oro:#e8c477;--rosa:#e8bfd0;--ok:#8fe0b0;--mal:#ffaaa8;
-}
+:root{--suelo:#070d25;--panel:#111f4a;--panel2:#192d61;--borde:rgba(219,190,116,.28);--perla:#fffaf1;--tenue:#c7cce0;--oro:#e8c477;--rosa:#e8bfd0;--ok:#8fe0b0;--mal:#ffaaa8}
 html{min-height:100%;background:var(--suelo)}
-body{
-  min-height:100vh;color:var(--perla);
-  font:15px/1.6 'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;
-  background:
-    radial-gradient(ellipse at 12% 0%,rgba(232,196,119,.16),transparent 34%),
-    radial-gradient(ellipse at 95% 28%,rgba(124,145,220,.17),transparent 32%),
-    linear-gradient(145deg,#070d25 0%,#0b1534 55%,#101a3d 100%);
-}
+body{min-height:100vh;color:var(--perla);font:15px/1.6 'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;background:radial-gradient(ellipse at 12% 0%,rgba(232,196,119,.16),transparent 34%),radial-gradient(ellipse at 95% 28%,rgba(124,145,220,.17),transparent 32%),linear-gradient(145deg,#070d25 0%,#0b1534 55%,#101a3d 100%)}
 main{max-width:1040px;margin:0 auto;padding:34px 22px 72px}
-h1,h2{font-family:'Cormorant Garamond',Georgia,serif;letter-spacing:.01em}
-h1{font-size:clamp(2rem,4vw,2.7rem);color:var(--oro);line-height:1.05}
-h2{font-size:1.8rem;color:var(--oro);margin:34px 0 12px}
-#login{
-  width:min(100%,470px);margin:8vh auto 0;padding:38px 34px;
-  border:1px solid rgba(232,196,119,.35);border-radius:28px;
-  background:linear-gradient(145deg,rgba(25,45,97,.94),rgba(12,25,61,.96));
-  box-shadow:0 28px 80px rgba(0,0,0,.38),inset 0 1px rgba(255,255,255,.06);
-}
+h1,h2{font-family:'Montserrat',system-ui,sans-serif;letter-spacing:0}
+h1{font-size:clamp(1.4rem,3.4vw,1.8rem);color:var(--oro);line-height:1.2}
+h2{font-size:1.25rem;color:var(--oro);margin:34px 0 12px}
+#login{width:min(100%,470px);margin:8vh auto 0;padding:38px 34px;border:1px solid rgba(232,196,119,.35);border-radius:28px;background:linear-gradient(145deg,rgba(25,45,97,.94),rgba(12,25,61,.96));box-shadow:0 28px 80px rgba(0,0,0,.38),inset 0 1px rgba(255,255,255,.06)}
 #login h1{text-align:center;margin-bottom:28px}
-#app>.top{
-  padding:18px 22px;margin-bottom:18px;border:1px solid var(--borde);
-  border-radius:22px;background:rgba(17,31,74,.78);
-  box-shadow:0 14px 35px rgba(0,0,0,.18)
-}
+#app>.top{padding:18px 22px;margin-bottom:18px;border:1px solid var(--borde);border-radius:22px;background:rgba(17,31,74,.78);box-shadow:0 14px 35px rgba(0,0,0,.18)}
 #resumen{padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.045);font-size:.95rem}
-input,select{
-  width:100%;background:rgba(5,13,37,.72);border:1px solid rgba(190,199,229,.28);
-  border-radius:13px;color:var(--perla);font:inherit;padding:13px 15px;transition:border-color .2s,box-shadow .2s
-}
+input,select{width:100%;background:rgba(5,13,37,.72);border:1px solid rgba(190,199,229,.28);border-radius:13px;color:var(--perla);font:inherit;padding:13px 15px;transition:border-color .2s,box-shadow .2s}
 input:focus,select:focus{border-color:var(--oro);box-shadow:0 0 0 3px rgba(232,196,119,.13)}
 label{font-weight:600;margin:18px 0 7px;color:#f2dfb7}
 button{font:600 .92rem 'Montserrat',system-ui,sans-serif;cursor:pointer;border-radius:999px;border:0;padding:12px 19px;transition:transform .18s,filter .18s,background .18s}
@@ -87,15 +68,11 @@ button:disabled{opacity:.5;cursor:wait;transform:none}
 .tab{background:rgba(255,255,255,.045);color:#d7dbee;border:1px solid rgba(190,199,229,.22);padding:9px 15px;font-size:.83rem}
 .tab.on{background:linear-gradient(135deg,#f4dda8,#dcae52);color:#251b09;border-color:transparent}
 #fBuscar{margin:2px 0 8px;max-width:560px;background:rgba(5,13,37,.58)}
-.card{
-  background:linear-gradient(145deg,rgba(22,39,88,.96),rgba(14,28,68,.96));
-  border:1px solid rgba(168,184,231,.2);border-radius:20px;padding:20px 21px;margin:0 0 13px;
-  box-shadow:0 12px 30px rgba(0,0,0,.16);transition:border-color .2s,transform .2s
-}
+.card{background:linear-gradient(145deg,rgba(22,39,88,.96),rgba(14,28,68,.96));border:1px solid rgba(168,184,231,.2);border-radius:20px;padding:20px 21px;margin:0 0 13px;box-shadow:0 12px 30px rgba(0,0,0,.16);transition:border-color .2s}
 .card:hover{border-color:rgba(232,196,119,.45)}
 .card.pend{border-color:rgba(232,196,119,.72);box-shadow:0 12px 30px rgba(0,0,0,.16),inset 3px 0 rgba(232,196,119,.65)}
 .l1{font-size:1.02rem;align-items:flex-start}
-.l1 b{font-size:1.08rem;overflow-wrap:anywhere}
+.l1 b{font-size:1.05rem;overflow-wrap:anywhere}
 .fila{color:#cbd2e8;font-size:.86rem;margin-top:5px}
 .est{font-size:.72rem;letter-spacing:.035em;text-transform:uppercase;padding:4px 10px;background:rgba(255,255,255,.07);white-space:nowrap}
 .est.recibido{color:#f2d38d;background:rgba(232,196,119,.12)}
@@ -109,18 +86,7 @@ button:disabled{opacity:.5;cursor:wait;transform:none}
 .sw input{width:22px;height:22px;accent-color:var(--oro)}
 details summary{color:#e8bfd0}
 pre{background:rgba(5,13,37,.48);border:1px solid rgba(255,255,255,.07);border-radius:13px;padding:14px}
-[hidden]{display:none!important}
-@media(max-width:600px){
-  main{padding:22px 14px 48px}
-  #login{margin:5vh auto 0;padding:28px 21px;border-radius:22px}
-  #app>.top{padding:15px 16px}
-  .card{padding:16px;border-radius:17px}
-  .l1{flex-direction:column;gap:9px}
-  .acc button{flex:1 1 100%}
-  .tabs{overflow-x:auto;flex-wrap:nowrap;padding:2px 1px 8px}
-  .tab{flex:none}
-}
-
+@media(max-width:600px){main{padding:22px 14px 48px}#login{margin:5vh auto 0;padding:28px 21px;border-radius:22px}#app>.top{padding:15px 16px}.card{padding:16px;border-radius:17px}.l1{flex-direction:column;gap:9px}.acc button{flex:1 1 100%}.tabs{overflow-x:auto;flex-wrap:nowrap;padding:2px 1px 8px}.tab{flex:none}}
 </style>
 </head>
 <body>
@@ -154,7 +120,7 @@ const SB='https://fxmgydfhuznxrxsggqlg.supabase.co';
 const KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ4bWd5ZGZodXpueHJ4c2dncWxnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ2NzU2MzIsImV4cCI6MjExMDI1MTYzMn0.s1N-Zq4Q6euOw5ZdP2lN-9FmhQT1TLtEIQWPDJLryVs';
 const sb=supabase.createClient(SB,KEY);
 const $=id=>document.getElementById(id);
-const NOM={sencilla:'Mensaje de los Arcángeles',estudio:'Estudio Angelical',personal:'Consulta personal'};
+const NOM={sencilla:'Mensaje de los Arcángeles',estudio:'Estudio Angelical',personal:'Consulta personal',libro:'Libro de los Arcángeles'};
 let datos=[];
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
 const fecha=f=>new Date(f).toLocaleString('es-VE',{timeZone:'America/Caracas',dateStyle:'short',timeStyle:'short'});
@@ -208,7 +174,7 @@ function tarjeta(d){
   c.appendChild(sm);
   if(d.monto_bs)c.appendChild(el('div','fila','Monto en Bs: '+Number(d.monto_bs).toLocaleString('es-VE')));
   c.appendChild(el('div','fila',d.email+(d.whatsapp?' · '+d.whatsapp:'')));
-  c.appendChild(el('div','fila','Nació: '+dnac(d.fecha_nacimiento)));
+  if(d.fecha_nacimiento)c.appendChild(el('div','fila','Nació: '+dnac(d.fecha_nacimiento)));
   if(d.otra_persona_nombre)c.appendChild(el('div','fila','Otra persona: '+d.otra_persona_nombre+' ('+(d.otra_persona_parentesco||'')+') · nació: '+dnac(d.otra_persona_fecha_nacimiento)));
   c.appendChild(el('div','fila','Pago: '+(d.metodo_pago||'—')+(d.referencia_pago?' · ref. '+d.referencia_pago:'')));
   (d.preguntas||[]).forEach((p,i)=>c.appendChild(el('div','q',(i+1)+'. '+p)));

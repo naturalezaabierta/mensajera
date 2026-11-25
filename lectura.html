@@ -7,10 +7,10 @@
 <title>Tu mensaje personal | Mensajera de los Arcángeles</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--perla:#fbf6ee;--caja:#f1e8f3;--linea:#dccde3;--oro:#c9962f;--oro-osc:#8a6420;--azul:#10286b;--tinta:#16214d;--suave:#5a6190;--rosa:#e7b6c9;--fs:19px;
---serif:"Cormorant Garamond",Georgia,serif;--sans:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+--serif:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--sans:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--perla);color:var(--tinta);font-family:var(--sans);font-size:var(--fs);line-height:1.7;padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
@@ -63,103 +63,66 @@ p{margin:0 0 14px}
 .sin-voz{font-size:.8rem;color:var(--suave);margin-top:8px;text-align:center}
 @media (prefers-reduced-motion:reduce){.leer{transition:none}}
 
-/* ===== Rediseño visual: lectura personal ===== */
-:root{--perla:#fffaf2;--caja:#f5edf2;--linea:#e3d4df;--oro:#c9962f;--oro-osc:#80591d;--azul:#14285f;--tinta:#17234d;--suave:#62698d;--rosa:#e8bfd0}
-body{
-  background:
-    radial-gradient(ellipse at 50% 0%,rgba(232,196,119,.12),transparent 38%),
-    linear-gradient(180deg,#fffaf2 0%,#f8f2ed 48%,#fffaf2 100%);
-  color:var(--tinta);font-size:18px;line-height:1.78
-}
+/* ===== Rediseño visual: lectura personal (Montserrat, más legible) ===== */
+:root{--perla:#fffaf2;--caja:#f5edf2;--linea:#e3d4df;--oro:#c9962f;--oro-osc:#80591d;--azul:#14285f;--tinta:#17234d;--suave:#5a6188;--rosa:#e8bfd0}
+body{background:radial-gradient(ellipse at 50% 0%,rgba(232,196,119,.12),transparent 38%),linear-gradient(180deg,#fffaf2 0%,#f8f2ed 48%,#fffaf2 100%);color:var(--tinta);font-size:var(--fs);line-height:1.75}
 .marco{max-width:790px;padding:36px 30px 22px}
 .cabecera{padding:14px 0 12px}
-.logo{
-  width:clamp(126px,25vw,164px);height:clamp(126px,25vw,164px);
-  border:5px solid #fffaf2;outline:1px solid rgba(201,150,47,.65);
-  box-shadow:0 10px 32px rgba(20,40,95,.18),0 0 0 7px rgba(201,150,47,.07)
-}
-.marca{font-size:1.18rem;letter-spacing:.04em}
-h1{font-size:clamp(2.35rem,6vw,3.15rem);color:var(--azul);margin-top:14px}
-.para{font-size:1.3rem}
-.para b{font-size:clamp(1.65rem,5vw,2.1rem);color:#8a6420;overflow-wrap:anywhere}
+.logo{width:clamp(126px,25vw,164px);height:clamp(126px,25vw,164px);border:5px solid #fffaf2;outline:1px solid rgba(201,150,47,.65);box-shadow:0 10px 32px rgba(20,40,95,.18),0 0 0 7px rgba(201,150,47,.07)}
+.marca{font-size:1rem;letter-spacing:.04em}
+h1{font-size:clamp(1.8rem,5.6vw,2.3rem);color:var(--azul);margin-top:14px;line-height:1.2}
+.para{font-style:normal;font-weight:500;font-size:1rem}
+.para b{font-size:clamp(1.4rem,4.6vw,1.7rem);color:#8a6420;overflow-wrap:anywhere}
 .divisor{margin:32px 0}
-h2{
-  display:table;font-size:1.35rem;letter-spacing:.01em;
-  background:linear-gradient(135deg,#1a3474,#102454);color:#fffaf2;
-  padding:10px 23px 12px;border-radius:14px 14px 14px 5px;
-  margin:34px 0 17px;box-shadow:0 7px 18px rgba(16,40,107,.13)
-}
-h3{font-size:1.75rem;color:var(--azul);margin:32px 0 14px}
+h2{display:table;font-size:1.1rem;line-height:1.35;letter-spacing:.01em;background:linear-gradient(135deg,#1a3474,#102454);color:#fffaf2;padding:10px 22px 11px;border-radius:14px 14px 14px 5px;margin:34px 0 17px;box-shadow:0 7px 18px rgba(16,40,107,.13)}
+h3{font-size:1.3rem;line-height:1.35;color:var(--azul);margin:32px 0 14px}
 p{margin:0 0 17px}
 .leer{padding:3px 5px;margin-left:-5px;margin-right:-5px;transition:background .2s,box-shadow .2s}
 .leer:hover{background:rgba(201,150,47,.07)}
-.leer.activo{background:rgba(201,150,47,.14);box-shadow:-6px 0 0 rgba(201,150,47,.14),6px 0 0 rgba(201,150,47,.14)}
+.leer.activo{background:rgba(201,150,47,.16);box-shadow:-6px 0 0 rgba(201,150,47,.16),6px 0 0 rgba(201,150,47,.16)}
 .interp{border-left:3px solid #d8a8bd;padding:7px 0 7px 18px;margin:0 0 18px}
-.apertura{color:#596184;font-size:1.06em}
+.apertura{font-style:normal;color:#596184}
 .cartas{gap:10px;margin:8px 0 20px}
-.carta{
-  background:linear-gradient(145deg,#fff,#f4eaf1);border:1px solid #e4d2df;
-  border-bottom:3px solid #d4b06a;border-radius:13px;padding:13px 12px;
-  color:#79531d;box-shadow:0 7px 17px rgba(24,35,77,.055);font-size:.75em
-}
-.carta small{color:#a47739}
+.carta{background:linear-gradient(145deg,#fff,#f4eaf1);border:1px solid #e4d2df;border-bottom:3px solid #d4b06a;border-radius:13px;padding:13px 12px;color:#79531d;box-shadow:0 7px 17px rgba(24,35,77,.055);font-size:.75em}
+.carta small{color:#a47739;font-style:normal}
 .calc{background:linear-gradient(145deg,#f7eff4,#fffaf2);border:1px solid #dfc18a;border-radius:18px;padding:17px 18px;box-shadow:0 8px 20px rgba(24,35,77,.05)}
-.calc .num{background:linear-gradient(145deg,#203d83,#102454);box-shadow:0 5px 14px rgba(16,40,107,.18)}
+.calc .num{background:linear-gradient(145deg,#203d83,#102454);box-shadow:0 5px 14px rgba(16,40,107,.18);font-size:1.6rem}
 .calc .tx{font-size:.82em}
-.calc .tx strong{color:#8a6420}
-.decreto{
-  position:relative;background:linear-gradient(145deg,#f7eff4,#fffaf2);
-  border:1px solid #d9b66f;border-radius:22px;padding:30px 24px;margin:36px 0;
-  box-shadow:0 12px 28px rgba(24,35,77,.07),inset 0 0 0 5px rgba(255,255,255,.7)
-}
-.decreto h4{font-size:1.65rem;color:#80591d}
-.decreto .linea{font-size:1.48rem;color:#202b54}
-.decreto .nota{font-size:.76em}
-.despedida{font-size:1.6rem;color:#89601f;margin:32px 0 14px}
-.legal{font-size:.7em;line-height:1.5;color:#747998}
+.calc .tx strong{color:#8a6420;font-size:1.15em}
+.decreto{position:relative;background:linear-gradient(145deg,#f7eff4,#fffaf2);border:1px solid #d9b66f;border-radius:22px;padding:30px 24px;margin:36px 0;box-shadow:0 12px 28px rgba(24,35,77,.07),inset 0 0 0 5px rgba(255,255,255,.7)}
+.decreto h4{font-size:1.3rem;color:#80591d}
+.decreto .linea{font-style:normal;font-size:1.15rem;line-height:1.5;color:#202b54}
+.decreto .nota{font-style:normal;font-size:.76em}
+.despedida{font-style:normal;font-size:1.2rem;line-height:1.5;color:#89601f;margin:32px 0 14px}
+.legal{font-size:.7em;line-height:1.5;color:#6c7192}
 .cierre{margin:42px 0 18px;padding:28px 18px;border-top:1px solid rgba(201,150,47,.4);border-bottom:1px solid rgba(201,150,47,.4)}
-.cierre .firma{font-size:clamp(1.8rem,5vw,2.35rem);color:var(--azul)}
-.btn-reservar{
-  display:inline-flex;align-items:center;justify-content:center;min-height:54px;
-  padding:15px 26px;border:1px solid rgba(137,96,31,.25);
-  background:linear-gradient(135deg,#f8e7bd,#e6b94d 65%,#c9962f);
-  box-shadow:0 9px 22px rgba(201,150,47,.2);border-radius:14px;
-  color:#2b210e;transition:transform .2s,filter .2s
-}
+.cierre .firma{font-style:normal;font-size:clamp(1.3rem,4.6vw,1.6rem);line-height:1.3;color:var(--azul)}
+.btn-reservar{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:15px 26px;border:1px solid rgba(137,96,31,.25);background:linear-gradient(135deg,#f8e7bd,#e6b94d 65%,#c9962f);box-shadow:0 9px 22px rgba(201,150,47,.2);border-radius:14px;color:#2b210e;transition:transform .2s,filter .2s}
 .btn-reservar:hover{transform:translateY(-2px);filter:brightness(1.04)}
-.reproductor{
-  background:rgba(255,250,242,.94);border-top:1px solid rgba(201,150,47,.55);
-  box-shadow:0 -10px 35px rgba(24,35,77,.09);backdrop-filter:blur(14px);
-  padding:13px 18px calc(13px + env(safe-area-inset-bottom,0px))
-}
+.reproductor{background:rgba(255,250,242,.94);border-top:1px solid rgba(201,150,47,.55);box-shadow:0 -10px 35px rgba(24,35,77,.09);backdrop-filter:blur(14px);padding:13px 18px calc(13px + env(safe-area-inset-bottom,0px))}
 .reproductor .in{max-width:790px}
 .fila{gap:9px}
-.btn-grande{
-  background:linear-gradient(135deg,#203d83,#102454);border-radius:14px;
-  box-shadow:0 7px 18px rgba(16,40,107,.18);font-size:.98rem;min-height:54px
-}
+.btn-grande{background:linear-gradient(135deg,#203d83,#102454);border-radius:14px;box-shadow:0 7px 18px rgba(16,40,107,.18);font-size:.98rem;min-height:54px}
 .btn-sec{background:#f4eaf1;border:1px solid #d9bd85;border-radius:14px;min-height:54px}
 .ajustes{background:#f6eef2;border:1px solid #e4d5df;border-radius:14px;padding:13px}
 .ajustes label{font-weight:600;color:#555d83}
 .ajustes select{border-color:#d6bd8c;border-radius:10px}
 .tam button{border-radius:10px}
 .aviso{padding:70px 22px}
-.sin-voz{font-size:.76rem}
 @media(max-width:560px){
-  body{font-size:16px;line-height:1.75;padding-bottom:calc(145px + env(safe-area-inset-bottom,0px))}
+  body{font-size:calc(var(--fs) - 2px);padding-bottom:calc(145px + env(safe-area-inset-bottom,0px))}
   .marco{padding:22px 18px 15px}
   .divisor{margin:24px 0}
-  h2{font-size:1.2rem;padding:9px 16px 10px;margin-top:28px}
-  h3{font-size:1.55rem;margin-top:27px}
+  h2{font-size:1.02rem;padding:9px 16px 10px;margin-top:28px}
+  h3{font-size:1.15rem;margin-top:27px}
   .decreto{padding:25px 18px}
-  .decreto .linea{font-size:1.3rem}
+  .decreto .linea{font-size:1.05rem}
   .btn-reservar{width:100%;padding:14px 16px}
   .reproductor{padding-left:12px;padding-right:12px}
   .btn-grande{font-size:.9rem;padding:13px 10px}
   .btn-sec{padding:0 14px;font-size:.85rem}
 }
-@media(prefers-reduced-motion:reduce){.leer{transition:none}.btn-reservar{transition:none}}
-
+@media(prefers-reduced-motion:reduce){.leer,.btn-reservar{transition:none}}
 </style>
 </head>
 <body>
@@ -196,7 +159,7 @@ p{margin:0 0 17px}
 (function(){
 "use strict";
 var API="https://fxmgydfhuznxrxsggqlg.supabase.co/functions/v1/lectura-arcangeles";
-var WA="https://wa.me/584160650749?text="+encodeURIComponent("Hola, estoy interesada en reservar una consulta personal de $12. ¿Me pasas los datos de pago?");
+var WA="https://wa.me/584160650749?text="+encodeURIComponent("Hola, me interesa reservar una consulta personal de $12. ¿Me pasas los datos de pago?");
 var NS="http://www.w3.org/2000/svg";
 var app=document.getElementById("app"),cola=[],idx=0,hablando=false,voz=null,vel=1.12;
 var soporte=("speechSynthesis" in window)&&("SpeechSynthesisUtterance" in window);
@@ -272,7 +235,7 @@ function nombreCarta(c){return c.replace(/\s*\(invertida\)\s*$/i,"").trim()+(/in
 function construir(datos){
   app.textContent="";
   var cab=el("header","cabecera");
-  var img=el("img","logo");img.src="logo-arcangeles.png";img.alt="Mensajera de los Arcángeles";img.width=150;img.height=150;cab.appendChild(img);
+  var img=el("img","logo");img.src="logo-arcangeles.jpg";img.alt="Mensajera de los Arcángeles";img.width=150;img.height=150;cab.appendChild(img);
   cab.appendChild(el("p","marca","Mensajera de los Arcángeles"));
   cab.appendChild(el("h1",null,"Tu mensaje personal"));
   var para=el("p","para","Preparado para");para.appendChild(el("b",null,datos.nombre));cab.appendChild(para);
